@@ -1,0 +1,19 @@
+name = "qdesign-manager"
+compatibility_date = "2024-01-01"
+
+# D1 Database配置
+[[d1_databases]]
+binding = "DB"
+database_name = "qdesign-db"
+database_id = "1e20b474-562f-4a73-a5fa-6981eade6b78"
+
+# R2 Bucket配置（需要先创建存储桶后更新）
+# [[r2_buckets]]
+# binding = "R2_BUCKET"
+# bucket_name = "qdesign-models"
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[env.development]
+vars = { ENVIRONMENT = "development" }
