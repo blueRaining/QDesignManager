@@ -42,3 +42,12 @@ next-env.d.ts
 
 # drizzle
 drizzle/
+
+# OpenNext build output
+.open-next/
+
+# Google OAuth credentials (NEVER commit these!)
+client_secret*.json
+
+# Windows temporary files
+nul

@@ -17,6 +17,9 @@ export const authOptions: NextAuthOptions = {
           response_type: "code",
         },
       },
+      httpOptions: {
+        timeout: 30000, // 增加超时到 30 秒
+      },
     }),
   ],
   callbacks: {
