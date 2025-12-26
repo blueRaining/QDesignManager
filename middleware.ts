@@ -6,7 +6,7 @@ import { getToken } from "next-auth/jwt";
 const protectedPaths = ["/dashboard"];
 
 // 公开 API 路由（不需要认证）
-const publicApiPaths = ["/api/auth", "/api/models/public", "/api/categories"];
+const publicApiPaths = ["/api/auth", "/api/models/public", "/api/categories", "/api/debug", "/api/auth-test", "/api/test-oauth", "/api/test-callback"];
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;

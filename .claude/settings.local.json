@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(npx wrangler secret put R2_BUCKET_NAME)",
+      "Bash(curl:*)",
+      "Bash(npx wrangler:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(cat:*)",
+      "Bash(printf:*)",
+      "Bash(npx opennextjs-cloudflare build:*)"
     ]
   }
 }

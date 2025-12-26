@@ -19,8 +19,3 @@ bucket_name = "qdesign-models"
 
 [vars]
 ENVIRONMENT = "production"
-
-# 自定义域名路由
-routes = [
-  { pattern = "qdesign.cloud/*", zone_name = "qdesign.cloud" }
-]
